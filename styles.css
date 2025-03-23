@@ -1,0 +1,62 @@
+.btn {
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-success {
+  background-color: #198754; /* Green */
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #146c43; /* Darker Green */
+}
+
+.btn-outline-dark {
+  border-color: black;
+}
+
+.btn-outline-dark:hover {
+  background-color: black;
+  color: white;
+}
+
+body {
+  background-color: #3a3a3a;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Light Mode */
+body.light-theme {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Dark Mode */
+body.dark-theme {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@keyframes animatedBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #ffdde1, #fc6076);
+  background-size: 300% 300%;
+  animation: animatedBackground 10s ease infinite;
+  min-height: 100vh;
+}
